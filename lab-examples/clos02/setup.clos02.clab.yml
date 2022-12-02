@@ -16,50 +16,70 @@ topology:
       kind: srl
       mgmt_ipv4: 172.100.100.2
       mgmt_ipv6: 2001:172:100:100::2
+      ports:
+       - 8002:22
     leaf2:
       kind: srl
       mgmt_ipv4: 172.100.100.3
       mgmt_ipv6: 2001:172:100:100::3
+      ports:
+       - 8003:22
     leaf3:
       kind: srl
       mgmt_ipv4: 172.100.100.4
       mgmt_ipv6: 2001:172:100:100::4
+      ports:
+       - 8004:22
     leaf4:
       kind: srl
       mgmt_ipv4: 172.100.100.5
       mgmt_ipv6: 2001:172:100:100::5
+      ports:
+       - 8005:22
 
     spine1:
       kind: srl
       type: ixrd3
       mgmt_ipv4: 172.100.100.6
       mgmt_ipv6: 2001:172:100:100::6
+      ports:
+       - 8006:22
     spine2:
       kind: srl
       type: ixrd3
       mgmt_ipv4: 172.100.100.7
       mgmt_ipv6: 2001:172:100:100::7
+      ports:
+       - 8007:22
     spine3:
       kind: srl
       type: ixrd3
       mgmt_ipv4: 172.100.100.8
       mgmt_ipv6: 2001:172:100:100::8
+      ports:
+       - 8008:22
     spine4:
       kind: srl
       type: ixrd3
       mgmt_ipv4: 172.100.100.9
       mgmt_ipv6: 2001:172:100:100::9
+      ports:
+       - 8009:22
 
     superspine1:
       kind: srl
       type: ixrd3
       mgmt_ipv4: 172.100.100.10
       mgmt_ipv6: 2001:172:100:100::10
+      ports:
+       - 8010:22
     superspine2:
       kind: srl
       type: ixrd3
       mgmt_ipv4: 172.100.100.11
       mgmt_ipv6: 2001:172:100:100::11
+      ports:
+       - 8011:22
 
     client1:
       kind: linux
